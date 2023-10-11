@@ -40,7 +40,7 @@ app.get('/students', async (req, res) => {
 });
 
 // Получение страницы со списком студентов
-app.getX509Certificate('/students_list', (req, res) => {
+app.get('/students_list', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
